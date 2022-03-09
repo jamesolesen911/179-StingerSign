@@ -1,0 +1,52 @@
+<!--<!DOCTYPE html>    -->
+
+{% block content %}
+<head>    
+<!--    <link rel="stylesheet" type="text/css" href="css/style2.css">-->
+    <title>{{ title }}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/style2.css' %}" />
+
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+</head>
+
+<body>
+    <br>
+    <h1>Profile</h1>
+
+
+    <div class="sidebar">
+		<a href="/">Homepage</a>
+		<a href="../history">History</a>
+	</div>
+
+    <!--<div class="topnav">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+         <button type="submit"><i class="fa fa-search"> Go</i></button>
+         </form>
+        </div>
+    -->
+   
+    <!--
+
+    <a href="/../register">
+        <button type="button" class="add_user_button" id="add_user_button" >Add New User </button>
+        </a>
+        
+        <a href="/admin/auth/user/">
+        <button type="button" class="delete_user_button" id="edit_user_button">Manage Users</button>
+        </a>
+
+    <h3>For admin users only.</h3>
+    <p>To add a new user, click "Add New User" and follow the instructions.
+        <br>To edit, remove, or search for existing users, click "Manage Users." 
+    </p>
+    
+    -->
+    
+
+
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6dc11596682870ab',m:'VaYFaP28hkUOl.yP_S7qqLFu.udRmNRBNEZmNBvlhhg-1644619282-0-AUYXQsrEz88qMqG9FqJrElP3/63nxRZWwZS4YVlv+t4G1z8aOexVodK2bLrD77CWWc1sB4bJhxk0/SZfuS8HNdt6H3UOTN4vBFcaIAhWc1RspqEZPKPFz5pBLQqoKDKu7g/KXJwaaH5fE9iiBMyf4ZUgs1jE2Wi/HNoR3g5CxWz1tiSQJC5fjrHXdf8CwKEdNg==',s:[0x470d86edb1,0x94ab213475],}})();</script></body>
+{% endblock %}

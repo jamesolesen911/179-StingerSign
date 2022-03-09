@@ -1,0 +1,13 @@
+{% extends "app/people.html" %}
+
+
+{% block content %}
+
+<div style='margin-top:30px;'>
+    <form method='POST'> {% csrf_token %}
+        {{ form.as_p }}
+        <button type='submit'>Register</button>
+    </form>
+</div>
+
+{% endblock %}

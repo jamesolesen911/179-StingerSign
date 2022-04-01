@@ -3,13 +3,11 @@ import { render } from "react-dom";
 import {
   BrowserRouter,
   Routes,
-  Route,
+  Route
 } from "react-router-dom";
-import Expenses from "./routes/expenses";
-import Invoices from "./routes/invoices";
-import Invoice from "./routes/invoice";
 import Login from "./routes/login";
 import Profile from './routes/profile';
+import Home from './routes/home';
 
 import "./style.css";
 import "./style2.css";
@@ -38,27 +36,16 @@ const client = new ApolloClient({
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
-    
-
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="expenses" element={<Expenses />} />
-
-        <Route path="invoices" element={<Invoices />}>
-          <Route
-            index
-            element={
-              <main style={{ padding: "1rem" }}>
-                <p>Select an invoice</p>
-              </main>
-            }
-          />
-          <Route path=":invoiceId" element={<Invoice />} />
-        </Route>
-
         <Route path="profile" element={<Profile />}>
         </Route>
 
+        <Route path="home" element={<Home />}></Route>
+
+        <Route exact path="/">
+          <Route path= "/" element={<Home />} />
+        </Route>
 
         <Route
           path="*"
@@ -83,7 +70,6 @@ export default function App() {
 
       <ApolloProvider client={client}>
         <div>
-          <h2>My first Apollo app 🚀</h2>
         </div>
       </ApolloProvider>
 
@@ -94,8 +80,6 @@ export default function App() {
           paddingBottom: "1rem",
         }}
       >
-        <Link to="/invoices">Invoices</Link> |{" "}
-        <Link to="/expenses">Expenses</Link> |{" "}
         <Link to="/login">Login</Link> |{" "}
         <Link to="/home">Home</Link> |{" "}
         <Link to="/profile">Profile</Link>

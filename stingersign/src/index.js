@@ -43,6 +43,8 @@ render(
 
         <Route path="home" element={<Home />}></Route>
 
+        <Route path="login" element={<Login />}></Route>
+
         <Route exact path="/">
           <Route path= "/" element={<Home />} />
         </Route>
@@ -92,4 +94,6 @@ export default function App() {
     
   );
 }
+
+
 

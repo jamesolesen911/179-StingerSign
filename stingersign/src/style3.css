@@ -91,6 +91,34 @@ input[type=text]:focus {
     outline: none;
 }
 
+input[type=email]{
+    width: 25%;
+    padding: 10px;
+    margin: 5px 0 5px 10px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type=password]{
+    width: 25%;
+    padding: 10px;
+    margin: 5px 0 5px 10px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
 hr{
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;

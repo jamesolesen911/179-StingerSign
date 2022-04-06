@@ -8,20 +8,20 @@ import {
 import Login from "./routes/login";
 import Profile from './routes/profile';
 import Home from './routes/home';
+import Upload from './routes/upload';
 
 import "./style.css";
 import "./style2.css";
 import "./style3.css";
+import "./upload.css";
+
 
 import { Outlet, Link } from "react-router-dom";
 
 import {
   ApolloClient,
   InMemoryCache,
-  ApolloProvider,
-  useQuery,
-  gql
-} from "@apollo/client";
+  ApolloProvider} from "@apollo/client";
 
 const client = new ApolloClient({
   uri: 'https://tz02ey9p4c.execute-api.us-west-2.amazonaws.com/graphql/',
@@ -44,6 +44,9 @@ render(
         <Route path="home" element={<Home />}></Route>
 
         <Route path="login" element={<Login />}></Route>
+
+        <Route path="upload" element={<Upload />}></Route>
+
 
         <Route exact path="/">
           <Route path= "/" element={<Home />} />
@@ -85,6 +88,8 @@ export default function App() {
         <Link to="/login">Login</Link> |{" "}
         <Link to="/home">Home</Link> |{" "}
         <Link to="/profile">Profile</Link>
+        <Link to="/upload">Upload</Link> |{" "}
+
 
       </nav>
       <Outlet />

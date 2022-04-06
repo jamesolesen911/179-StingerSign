@@ -11,9 +11,9 @@ export default function Upload() {
               
               
         <div 
-        class="form-group files">
+        className="form-group files">
           <label>Upload Your File </label>
-          <input type="file" class="form-control" multiple=""/>
+          <input type="file" className="form-control" multiple=""/>
         </div>
         
       <button>Submit</button>

@@ -4,14 +4,14 @@ function LoginForm({ Login, error}) {
     const[details, setDetails] = useState({name: "", email: "", password: ""});
 
     const submitHandler = e => {
-        e.preventDeault();
+        e.preventDefault();
 
         Login(details);
     }
 
     return(
       <form onSubmit={submitHandler}>
-          <div ClassName="form-inner">
+          <div className="form-inner">
               <h2>Login</h2>
               {(error != "") ? ( <div className="error">{error}</div> ) : ""}
               <div className="form-group">

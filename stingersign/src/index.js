@@ -85,10 +85,12 @@ export default function App() {
           paddingBottom: "1rem",
         }}
       >
-        <Link to="/login">Login</Link> |{" "}
-        <Link to="/home">Home</Link> |{" "}
-        <Link to="/profile">Profile</Link> |{" "}
-        <Link to="/upload">Upload</Link> {" "}
+        <Link to="/login"style={{textDecoration:"none"}}>Login</Link> |{" "} 
+        <Link to="/home"style={{textDecoration:"none"}}>Home</Link> |{" "}
+        <Link to="/profile"style={{textDecoration:"none"}}>Profile</Link> |{" "}
+        <Link to="/upload"style={{textDecoration:"none"}}>Upload</Link> |{" "}
+        <Link to="/signature"style={{textDecoration:"none"}}>Signature Required</Link> |{" "}
+        <Link to="/ManageDocument"style={{textDecoration:"none"}}>Manage Documents</Link> |
 
 
       </nav>

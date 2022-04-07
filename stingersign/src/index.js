@@ -9,6 +9,7 @@ import Login from "./routes/login";
 import Profile from './routes/profile';
 import Home from './routes/home';
 import Upload from './routes/upload';
+import Signature from './routes/signature';
 
 import "./style.css";
 import "./style2.css";
@@ -22,6 +23,7 @@ import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider} from "@apollo/client";
+import ManageDocumentPage from './routes/ManageDocumentPage';
 
 const client = new ApolloClient({
   uri: 'https://tz02ey9p4c.execute-api.us-west-2.amazonaws.com/graphql/',
@@ -46,6 +48,10 @@ render(
         <Route path="login" element={<Login />}></Route>
 
         <Route path="upload" element={<Upload />}></Route>
+
+        <Route path="signature" element={<Signature />}></Route>
+
+        <Route path="ManageDocument" element={<ManageDocumentPage />}></Route>
 
 
         <Route exact path="/">
@@ -87,8 +93,11 @@ export default function App() {
       >
         <Link to="/login">Login</Link> |{" "}
         <Link to="/home">Home</Link> |{" "}
-        <Link to="/profile">Profile</Link>
+        <Link to="/profile">Profile</Link> |{" "}
         <Link to="/upload">Upload</Link> |{" "}
+        <Link to="/signature">Signature Required</Link> |{" "}
+        <Link to="/ManageDocument">Manage Documents</Link> |{" "}
+
 
 
       </nav>

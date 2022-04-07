@@ -1,12 +1,12 @@
 .files input {
     outline: 2px dashed #92b0b3;
-    outline-offset: -10px;
+    outline-offset: -20px;
     -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
     transition: outline-offset .15s ease-in-out, background-color .15s linear;
-    padding: 120px 0px 85px 35%;
+    padding: 100px 0px 85px 35%;
     text-align: center !important;
     margin: 0;
-    width: 100% !important;
+    width: 55% !important;
 }
 .files input:focus{     outline: 2px dashed #92b0b3;  outline-offset: -10px;
     -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
@@ -17,7 +17,7 @@
     position: absolute;
     top: 60px;
     left: 0;
-    width: 50px;
+    width: 50x;
     right: 0;
     height: 56px;
     content: "";

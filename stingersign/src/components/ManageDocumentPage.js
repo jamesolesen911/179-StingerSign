@@ -9,8 +9,8 @@ export default function ManageDocumentPage() {
       <main style={{ padding: "1rem 0" }}>
 
         <h2>Manage Documents</h2>
-        <Link to="/"style={{textDecoration:"none"}}>Login</Link> |{" "} 
         <Link to="/homepage"style={{textDecoration:"none"}}>Home</Link> |{" "}
+        <Link to="/"style={{textDecoration:"none"}}>Login</Link> |{" "} 
         <Link to="/profile"style={{textDecoration:"none"}}>Profile</Link> |{" "}
         <Link to="/upload"style={{textDecoration:"none"}}>Upload</Link> |{" "}
         <Link to="/signature"style={{textDecoration:"none"}}>Signature Required</Link> |{" "}

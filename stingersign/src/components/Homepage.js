@@ -12,7 +12,7 @@ export default function Homepage() {
       <Link to="/profile"style={{textDecoration:"none"}}>Profile</Link> |{" "}
       <Link to="/upload"style={{textDecoration:"none"}}>Upload</Link> |{" "}
       <Link to="/signature"style={{textDecoration:"none"}}>Signature Required</Link> |{" "}
-      <Link to="/ManageDocument"style={{textDecoration:"none"}}>Manage Documents</Link> |
+      <Link to="/ManageDocument"style={{textDecoration:"none"}}>Manage Documents</Link> 
     </div>
   );
 }

@@ -10,6 +10,7 @@ import "../styles/style3.css";
 const initValues = {
   email: "",
   password: "",
+  test: "TESTING"
 };
 
 export default function Login() {
@@ -40,6 +41,7 @@ export default function Login() {
       if (user.Email === formValues.email) {
         console.log("User Found");
         setLoginSuccess("Logged In Successfully");
+        window.localStorage.setItem("state" , user.Email);
         tempUserHolder = user;
         setLoggedInUser(tempUserHolder);
       }

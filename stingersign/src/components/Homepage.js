@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export default function Homepage() {
 
   return (
+    <main style={{ padding: "1rem 0" }}>
     <div>
       <h2> Home Page </h2>
 
@@ -14,5 +15,6 @@ export default function Homepage() {
       <Link to="/signature"style={{textDecoration:"none"}}>Signature Required</Link> |{" "}
       <Link to="/ManageDocument"style={{textDecoration:"none"}}>Manage Documents</Link> 
     </div>
+    </main>
   );
 }

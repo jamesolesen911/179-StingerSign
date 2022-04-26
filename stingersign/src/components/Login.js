@@ -54,6 +54,7 @@ export default function Login() {
   };
 
   return (
+    <main style={{ padding: "1rem 0" }}>
     <div>
       <h2 className="login-header"> Stinger-Sign Log In </h2>
       <form onSubmit={handleSubmit}>
@@ -91,5 +92,6 @@ export default function Login() {
         <p>Click here if already logged in</p>
       </Link>
     </div>
+    </main>
   );
 }

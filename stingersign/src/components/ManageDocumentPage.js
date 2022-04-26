@@ -16,9 +16,6 @@ export default function ManageDocumentPage() {
         <Link to="/signature"style={{textDecoration:"none"}}>Signature Required</Link> |{" "}
         <Link to="/ManageDocument"style={{textDecoration:"none"}}>Manage Documents</Link> |
 
-
-        <h3> Manage Here</h3>
-
       </main>
     );
   }

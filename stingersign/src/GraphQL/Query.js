@@ -10,18 +10,18 @@ export const FIRST_AND_LAST_NAME_FOR_ALL_USERS = gql`
     }
   }
 }
-`;
+`
 
-export const USER_INFO = gql`
+export const GET_FILES = gql`
 query blocksQuery {
-  list_ProfileItems {
-    _ProfileItems {
-      Email
-      FirstName
-      LastName
-      MiddleName
-      Nickname
-      PhoneNumber
+  listVendia_FileItems(limit: 10) {
+    Vendia_FileItems {
+      _id
+      _owner
+      copyStrategy
+      createdTime
+      destinationKey
+      temporaryUrl
     }
   }
 }

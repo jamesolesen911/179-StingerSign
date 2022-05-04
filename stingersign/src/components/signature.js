@@ -3,7 +3,6 @@ import "../styles/style.css";
 import "../styles/style2.css";
 import "../styles/style3.css";
 import { Link } from "react-router-dom";
-import pdf from "../files/sample.pdf"
 import { useQuery } from "@apollo/client";
 
 import { GET_FILES } from "../GraphQL/Query";

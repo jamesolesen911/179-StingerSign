@@ -7,6 +7,7 @@ export const FIRST_AND_LAST_NAME_FOR_ALL_USERS = gql`
       Email
       FirstName
       LastName
+      Password
     }
   }
 }
@@ -22,6 +23,21 @@ query blocksQuery {
       createdTime
       destinationKey
       temporaryUrl
+    }
+  }
+}
+`
+
+export const USER_INFO = gql`
+query blocksQuery {
+  list_ProfileItems {
+    _ProfileItems {
+      Email
+      FirstName
+      LastName
+      MiddleName
+      Nickname
+      PhoneNumber
     }
   }
 }

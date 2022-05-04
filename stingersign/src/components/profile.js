@@ -4,7 +4,7 @@ import "../styles/style2.css";
 import "../styles/style3.css";
 import { useQuery } from "@apollo/client";
 import { Link } from "react-router-dom";
-import { FIRST_AND_LAST_NAME_FOR_ALL_USERS } from "../GraphQL/Query";
+import { USER_INFO } from "../GraphQL/Query";
 
 const loggedIn = window.localStorage.getItem("state");
 
@@ -19,7 +19,7 @@ export default function Profile() {
 
 const [loggedInUser, setLoggedInUser] = useState();  
 
-const { error, loading, data } = useQuery(FIRST_AND_LAST_NAME_FOR_ALL_USERS);
+const { error, loading, data } = useQuery(USER_INFO);
 
   useEffect(() => {
 

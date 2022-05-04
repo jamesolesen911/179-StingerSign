@@ -35,10 +35,18 @@ export default function Login() {
     checkIfUserIsRegistered();
   };
 
+  const handlePassword = (e) => {
+    setFormError("");
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+    console.log(data)
+  }
+
+
   const checkIfUserIsRegistered = () => {
     let tempUserHolder = null;
     data.list_ProfileItems._ProfileItems.map((user) => {
-      if (user.Email === formValues.email) {
+      if (user.Email === formValues.email && user.Password === formValues.password) {
         console.log("User Found");
         setLoginSuccess("Logged In Successfully");
         window.localStorage.setItem("state" , user.Email);
@@ -75,7 +83,7 @@ export default function Login() {
             />
             <br />
             <label>Password</label>
-            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Password" name="password" onChange={handlePassword} />
             <br />
             <p>{formError}</p>
             <p>{loginSuccess}</p>

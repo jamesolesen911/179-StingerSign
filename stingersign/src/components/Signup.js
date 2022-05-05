@@ -41,7 +41,7 @@ export default function Signup() {
   };
 
   return (
-    <div id="box">
+    <div id="box2">
       <main style={{ padding: "0.5rem 0" }}>
       <h1> SIGN UP </h1><hr></hr><br></br>
       <form onSubmit={handleSubmit}>

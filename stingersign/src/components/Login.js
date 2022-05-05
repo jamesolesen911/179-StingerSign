@@ -60,10 +60,8 @@ export default function Login() {
   };
 
   return (
-    <div style={{class: "container", display: "flex", flexDirection:"column", justifyContent: "space-between", padding: "10px", width:"500px", height:"500px"}}> 
-    <div style={{alignSelf: "flex-start", borderWidth: "1px", borderStyle:"solid", width: "100%"}}>
-    <div style={{alignSelf: "flex-start", width: "100%"}}>
-    <main style={{ padding: "1rem 0" }}>
+    <div id="box">
+    <main style={{ padding: "0.5rem 0" }}>
     <div>
       <h1 className="login-header"> LOG IN </h1>
       <hr></hr> <br></br>
@@ -106,8 +104,6 @@ export default function Login() {
       </Link>
     </div>
     </main>
-    </div>
-    </div> 
     </div>
   );
 }

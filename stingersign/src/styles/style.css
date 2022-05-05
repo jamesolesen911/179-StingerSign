@@ -16,6 +16,16 @@ body
     text-align: center;
 }
 
+#box 
+{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
+    border:1px solid black;
+    background-color: #e4e4e4;
+}
+
 .login{
         width: 400px;
         overflow: hidden;
@@ -28,6 +38,7 @@ body
 
 h1{
     font-weight:100;
+    text-align: center;
 }
 
 h2{

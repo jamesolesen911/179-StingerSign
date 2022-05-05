@@ -41,10 +41,8 @@ export default function Signup() {
   };
 
   return (
-    <div style={{class: "container", display: "flex", flexDirection:"column", justifyContent: "space-between", padding: "10px", width:"500px", height:"500px" }}> 
-    <div style={{alignSelf: "flex-start", borderWidth: "1px", borderStyle:"solid", width: "100%"}}>
-    <div style={{alignSelf: "flex-start", width: "100%"}}>
-    <div>
+    <div id="box">
+      <main style={{ padding: "0.5rem 0" }}>
       <h1> SIGN UP </h1><hr></hr><br></br>
       <form onSubmit={handleSubmit}>
         <label>First Name: </label>
@@ -74,9 +72,7 @@ export default function Signup() {
       <Link to="/">
         <p> Already have an account? Log in</p>
       </Link>
+      </main>
     </div>
-    </div>
-    </div> 
-  </div>
   );
 }

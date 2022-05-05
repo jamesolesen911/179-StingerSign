@@ -72,7 +72,7 @@ export default function Login() {
           </p>
         ) : (
           <>
-            <label>Email</label>
+            <label>Email: </label>
             <input
               type="email"
               placeholder="Email"
@@ -80,7 +80,7 @@ export default function Login() {
               onChange={handleChange}
             />
             <br />
-            <label>Password</label>
+            <label>Password: </label>
             <input type="password" placeholder="Password" name="password" onChange={handlePassword} />
             <br />
             <p>{formError}</p>

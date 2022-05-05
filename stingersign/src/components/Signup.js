@@ -65,7 +65,7 @@ export default function Signup() {
         <label>Password: </label>
         <input type="password" placeholder="Password" name="password" onChange={handleChange}/>
         <br />
-        <button type="submit"> CREATE ACCOUNT </button>
+        <button type="submit"> Create Account </button>
       </form>
 
       <Link to="/">

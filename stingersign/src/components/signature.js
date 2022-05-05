@@ -27,8 +27,8 @@ export default function Signature() {
      
       return (
         <div style={{class: "container", display: "flex", flexDirection:"column", justifyContent: "space-between", padding: "10px" }}> 
-          <div style={{alignSelf: "flex-start", borderWidth: "1px", borderStyle:"solid", width: "80%"}}>
-          <div style={{alignSelf: "flex-start", width: "125%"}}>
+          <div style={{alignSelf: "flex-start", borderWidth: "1px", borderStyle:"solid", width: "100%"}}>
+          <div style={{alignSelf: "flex-start", width: "100%"}}>
             <h4>This is a document</h4>
             <a href={props.temporaryUrl} target="_blank" rel="noreferrer">
               props.file
@@ -53,7 +53,7 @@ export default function Signature() {
         
         <FileList />
   
-        <button style={{ width: "20%"}} onClick={handleSubmit}>Submit Signature</button>
+        <button style={{ width: "13%"}} onClick={handleSubmit}>Submit Signature</button>
       </main>
     );
   }

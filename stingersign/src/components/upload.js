@@ -20,7 +20,7 @@ export default function Upload() {
         className="form-group files">
           <input type="file" className="form-control" multiple=""/>
         </div>
-      <button>Submit</button>
+      <button style={{ width: "7%"}} >Submit</button>
       </main>
     </form> 
     )

@@ -78,19 +78,19 @@ export default function Login() {
             <label>Email:  </label>
             <input
               type="email"
-              placeholder="Email"
+              placeholder=" Email"
               name="email"
               onChange={handleChange}
             />
             <br />
             <br></br>
             <label>Password:  </label>
-            <input type="password" placeholder="Password" name="password" onChange={handlePassword} />
+            <input type="password" placeholder=" Password" name="password" onChange={handlePassword} />
             <br />
             <p>{formError}</p>
             <p>{loginSuccess}</p>
             <br></br>
-            <button type="submit"> Log In </button>
+            <button style={{ width: "7%"}} type="submit"> Log In </button>
           </>
         )}
       </form>

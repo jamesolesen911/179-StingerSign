@@ -41,11 +41,11 @@ export default function Signup() {
   };
 
   return (
-    <div style={{class: "container", display: "flex", flexDirection:"column", justifyContent: "space-between", padding: "10px" }}> 
+    <div style={{class: "container", display: "flex", flexDirection:"column", justifyContent: "space-between", padding: "10px", width:"500px", height:"500px" }}> 
     <div style={{alignSelf: "flex-start", borderWidth: "1px", borderStyle:"solid", width: "100%"}}>
     <div style={{alignSelf: "flex-start", width: "100%"}}>
     <div>
-      <h2> Stinger-Sign Sign Up </h2>
+      <h1> SIGN UP </h1><hr></hr><br></br>
       <form onSubmit={handleSubmit}>
         <label>First Name: </label>
         <input type="text" placeholder=" First Name" name="firstName" onChange={handleChange}/>
@@ -68,9 +68,9 @@ export default function Signup() {
         <label>Password: </label>
         <input type="password" placeholder=" Password" name="password" onChange={handleChange}/>
         <br /><br></br>
-        <button style={{ width: "12%"}} type="submit"> Create Account </button>
+        <button style={{ width: "25%"}} type="submit"> Create Account </button>
       </form>
-
+      <br></br><hr></hr>
       <Link to="/">
         <p> Already have an account? Log in</p>
       </Link>

@@ -60,7 +60,7 @@ export default function Login() {
   };
 
   return (
-    <div style={{class: "container", display: "flex", flexDirection:"column", justifyContent: "space-between", padding: "10px" }}> 
+    <div style={{class: "container", display: "flex", flexDirection:"column", justifyContent: "space-between", padding: "10px", width:"500px", height:"500px"}}> 
     <div style={{alignSelf: "flex-start", borderWidth: "1px", borderStyle:"solid", width: "100%"}}>
     <div style={{alignSelf: "flex-start", width: "100%"}}>
     <main style={{ padding: "1rem 0" }}>
@@ -91,7 +91,7 @@ export default function Login() {
             <p>{formError}</p>
             <p>{loginSuccess}</p>
             <br></br>
-            <button style={{ width: "7%"}} type="submit"> Log In </button>
+            <button style={{ width: "13%"}} type="submit"> Log In </button>
           </>
         )}
       </form>

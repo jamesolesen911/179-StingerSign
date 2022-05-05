@@ -65,7 +65,8 @@ export default function Login() {
     <div style={{alignSelf: "flex-start", width: "100%"}}>
     <main style={{ padding: "1rem 0" }}>
     <div>
-      <h2 className="login-header"> Stinger-Sign Log In </h2>
+      <h1 className="login-header"> LOG IN </h1>
+      <hr></hr> <br></br>
       <form onSubmit={handleSubmit}>
         {loggedInUser ? (
           <p>
@@ -75,7 +76,7 @@ export default function Login() {
           </p>
         ) : (
           <>
-            <label>Email:  </label>
+            <label>Email:  </label><br />
             <input
               type="email"
               placeholder=" Email"
@@ -84,7 +85,7 @@ export default function Login() {
             />
             <br />
             <br></br>
-            <label>Password:  </label>
+            <label>Password:  </label><br />
             <input type="password" placeholder=" Password" name="password" onChange={handlePassword} />
             <br />
             <p>{formError}</p>
@@ -94,7 +95,8 @@ export default function Login() {
           </>
         )}
       </form>
-
+      <br></br>
+      <hr></hr>
       <Link to="/signup">
         <p> Click here to sign up! </p>
       </Link>

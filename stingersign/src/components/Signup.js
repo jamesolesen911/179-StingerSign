@@ -48,26 +48,26 @@ export default function Signup() {
       <h2> Stinger-Sign Sign Up </h2>
       <form onSubmit={handleSubmit}>
         <label>First Name: </label>
-        <input type="text" placeholder="First Name" name="firstName" onChange={handleChange}/>
-        <br />
+        <input type="text" placeholder=" First Name" name="firstName" onChange={handleChange}/>
+        <br /><br></br>
         <label>Middle Name: </label>
-        <input type="text" placeholder="Middle Name" name="middleName"onChange={handleChange} />
-        <br />
+        <input type="text" placeholder=" Middle Name" name="middleName"onChange={handleChange} />
+        <br /><br></br>
         <label>Last Name: </label>
-        <input type="text" placeholder="Last Name" name="lastName" onChange={handleChange}/>
-        <br />
+        <input type="text" placeholder=" Last Name" name="lastName" onChange={handleChange}/>
+        <br /><br></br>
         <label>Phone Number: </label>
-        <input type="text" placeholder="Phone Number" name="phoneNumber" onChange={handleChange}/>
-        <br />
+        <input type="text" placeholder=" Phone Number" name="phoneNumber" onChange={handleChange}/>
+        <br /><br></br>
         <label>Nickname: </label>
-        <input type="text" placeholder="Nickname" name="nickname" onChange={handleChange}/>
-        <br />
+        <input type="text" placeholder=" Nickname" name="nickname" onChange={handleChange}/>
+        <br /><br></br>
         <label>Email: </label>
-        <input type="email" placeholder="Email" name="email"onChange={handleChange}/>
-        <br />
+        <input type="email" placeholder=" Email" name="email"onChange={handleChange}/>
+        <br /><br></br>
         <label>Password: </label>
-        <input type="password" placeholder="Password" name="password" onChange={handleChange}/>
-        <br />
+        <input type="password" placeholder=" Password" name="password" onChange={handleChange}/>
+        <br /><br></br>
         <button type="submit"> Create Account </button>
       </form>
 

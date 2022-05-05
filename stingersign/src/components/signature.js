@@ -28,7 +28,7 @@ export default function Signature() {
       return (
         <div style={{class: "container", display: "flex", flexDirection:"column", justifyContent: "space-between", padding: "10px" }}> 
           <div style={{alignSelf: "flex-start", borderWidth: "1px", borderStyle:"solid", width: "80%"}}>
-          <div style={{alignSelf: "flex-start", width: "80%"}}>
+          <div style={{alignSelf: "flex-start", width: "125%"}}>
             <h4>This is a document</h4>
             <a href={props.temporaryUrl} target="_blank" rel="noreferrer">
               props.file

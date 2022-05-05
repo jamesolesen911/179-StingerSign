@@ -60,6 +60,9 @@ export default function Login() {
   };
 
   return (
+    <div style={{class: "container", display: "flex", flexDirection:"column", justifyContent: "space-between", padding: "10px" }}> 
+    <div style={{alignSelf: "flex-start", borderWidth: "1px", borderStyle:"solid", width: "80%"}}>
+    <div style={{alignSelf: "flex-start", width: "125%"}}>
     <main style={{ padding: "1rem 0" }}>
     <div>
       <h2 className="login-header"> Stinger-Sign Log In </h2>
@@ -72,7 +75,7 @@ export default function Login() {
           </p>
         ) : (
           <>
-            <label>Email: </label>
+            <label>Email:  </label>
             <input
               type="email"
               placeholder="Email"
@@ -80,11 +83,13 @@ export default function Login() {
               onChange={handleChange}
             />
             <br />
-            <label>Password: </label>
+            <br></br>
+            <label>Password:  </label>
             <input type="password" placeholder="Password" name="password" onChange={handlePassword} />
             <br />
             <p>{formError}</p>
             <p>{loginSuccess}</p>
+            <br></br>
             <button type="submit"> Log In </button>
           </>
         )}
@@ -99,5 +104,8 @@ export default function Login() {
       </Link>
     </div>
     </main>
+    </div>
+    </div> 
+    </div>
   );
 }

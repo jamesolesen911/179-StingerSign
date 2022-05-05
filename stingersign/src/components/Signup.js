@@ -41,6 +41,9 @@ export default function Signup() {
   };
 
   return (
+    <div style={{class: "container", display: "flex", flexDirection:"column", justifyContent: "space-between", padding: "10px" }}> 
+    <div style={{alignSelf: "flex-start", borderWidth: "1px", borderStyle:"solid", width: "80%"}}>
+    <div style={{alignSelf: "flex-start", width: "125%"}}>
     <div>
       <h2> Stinger-Sign Sign Up </h2>
       <form onSubmit={handleSubmit}>
@@ -72,5 +75,8 @@ export default function Signup() {
         <p> Already have an account? Log in</p>
       </Link>
     </div>
+    </div>
+    </div> 
+  </div>
   );
 }

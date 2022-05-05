@@ -13,6 +13,7 @@ body
     padding: 0;
     background-color:#abeaac;
     font-family: 'montserrat';
+    text-align: center;
 }
 .login{
         width: 400px;

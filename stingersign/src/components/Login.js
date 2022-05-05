@@ -4,8 +4,6 @@ import { FIRST_AND_LAST_NAME_FOR_ALL_USERS } from "../GraphQL/Query";
 import { Link } from "react-router-dom";
 
 import "../styles/style.css";
-import "../styles/style2.css";
-import "../styles/style3.css";
 
 const initValues = {
   email: "",

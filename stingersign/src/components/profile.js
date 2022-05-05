@@ -67,7 +67,7 @@ const { error, loading, data } = useQuery(USER_INFO);
         <input type="text" id="email" name="email" placeholder={loggedInUser.Email} ></input><br></br><br></br>
         <label htmlFor ="nickname">Nickname </label> <br></br>
         <input type="text" id="nickname" name="nickname" placeholder={loggedInUser.Nickname}></input><br></br><br></br>
-        <label htmlFor ="phoneNumber">PhoneNumber </label> <br></br>
+        <label htmlFor ="phoneNumber">Phone Number </label> <br></br>
         <input type="text" id="phoneNumber" name="phoneNumber" placeholder={loggedInUser.PhoneNumber}></input><br></br><br></br>
         </div>
       ): <p>No user logged in.</p> }

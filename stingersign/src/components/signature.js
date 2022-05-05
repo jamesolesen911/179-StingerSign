@@ -55,7 +55,7 @@ export default function Signature() {
         
         <FileList />
   
-        <button style={{ width: "20%"}} onClick={handleSubmit}>Submit Signaturee</button>
+        <button style={{ width: "20%"}} onClick={handleSubmit}>Submit Signature</button>
       </main>
     );
   }

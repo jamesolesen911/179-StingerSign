@@ -23,8 +23,8 @@ body
     margin-right: auto;
     height:100%;
     border:1px solid black;
-    background-color: #e4e4e4;
-    box-shadow: 10px 10px 8px #888888;
+    background-color: #f1f1f1;
+    box-shadow: 8px 8px 8px #ababab;
     border-radius: 5px;
 }
 
@@ -41,6 +41,7 @@ body
 h1{
     font-weight:100;
     text-align: center;
+    text-shadow:5px 5px 8px #ababab
 }
 
 h2{

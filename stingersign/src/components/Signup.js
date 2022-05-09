@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { ADD_NEW_USER } from "../GraphQL/Mutation";
+import {FIRST_AND_LAST_NAME_FOR_ALL_USERS } from "../GraphQL/Query";
 
 const initValues = {
   firstName: "",
@@ -13,11 +15,17 @@ const initValues = {
   password: "",
 };
 
+let valid = true;
+
+
 export default function Signup() {
   const [addNewUser, { loading }] = useMutation(ADD_NEW_USER);
   const [formValues, setFormValues] = useState(initValues);
+  const { error, data } = useQuery(FIRST_AND_LAST_NAME_FOR_ALL_USERS);
+  const [formError, setFormError] = useState("");
 
   if (loading) return <div>Loading</div>;
+  if (error) return <div>Error: {error.message}</div>;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,7 +33,35 @@ export default function Signup() {
     console.log(formValues);
   };
 
-  const handleSubmit = () => {
+  const handleError = (e) => {
+    console.log("User Not added.");
+    setFormError("New User not created. Account already exists.");
+  }
+
+  const handleBadCredentials = (e) => {
+    console.log("Email or password left blank.");
+    setFormError("Cannot leave email or password blank.");
+  }
+
+  const handleSubmit = (e) => {
+
+    e.preventDefault();
+    
+    if(formValues.email === '' || formValues.password === '')
+    {
+      valid = false;
+      handleBadCredentials();
+    }
+
+    data.list_ProfileItems._ProfileItems.map((user) => {
+      if (user.Email === formValues.email) {
+        console.log("User with same email found");
+        setFormError("Email already in use");
+        valid = false;
+      }
+    });
+
+    if(valid === true){
     addNewUser({
       variables: {
         Email: formValues.email,
@@ -38,7 +74,15 @@ export default function Signup() {
       }
     })
     console.log("Added User");
+  }
+
+  else{
+    console.log("Not submitted");
+  }
+
   };
+
+  
 
   return (
     <div id="box2">
@@ -67,6 +111,7 @@ export default function Signup() {
         <input type="password" placeholder=" Password" name="password" onChange={handleChange}/>
         <br /><br></br>
         <button style={{ width: "25%"}} type="submit"> Create Account </button>
+        <p>{formError}</p>
       </form>
       <br></br><hr></hr>
       <Link to="/">

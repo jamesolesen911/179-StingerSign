@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import { useQuery } from "@apollo/client";
@@ -32,11 +32,6 @@ export default function Signup() {
     setFormValues({ ...formValues, [name]: value });
     console.log(formValues);
   };
-
-  const handleError = (e) => {
-    console.log("User Not added.");
-    setFormError("New User not created. Account already exists.");
-  }
 
   const handleBadCredentials = (e) => {
     console.log("Email or password left blank.");

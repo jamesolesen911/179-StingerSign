@@ -1,4 +1,4 @@
-import React, {useEffect } from 'react';
+import React, {useEffect, useState } from 'react';
 import "../styles/style.css";
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
@@ -7,12 +7,18 @@ import { GET_FILES } from "../GraphQL/Query";
 
 export default function Signature() {
   const { error, loading, data } = useQuery(GET_FILES);
+  const [documents, setDocuments] = useState();
 
     function handleSubmit(e) {
       e.preventDefault();
-      console.log(data)
       getFileList();
     }
+    //need to implement await so useEffect hook can work properly
+    // useEffect(() => {
+    //   // Update the document title using the browser API
+    //   getFileList();
+
+    // });
     const links =[]
     const getFileList = () => {
       console.log("getting the list relax son")
@@ -21,21 +27,28 @@ export default function Signature() {
         links.push(file.temporaryUrl)
         console.log(links)
       })
+      setDocuments(links[0])
+
     };
+
     
     function FileList(props) {
-     
+    
+   
       return (
         <div style={{class: "container", display: "flex", flexDirection:"column", justifyContent: "space-between", padding: "10px" }}> 
           <div style={{alignSelf: "flex-start", borderWidth: "1px", borderStyle:"solid", width: "100%"}}>
           <div style={{alignSelf: "flex-start", width: "100%"}}>
             <h4>This is a document</h4>
-            <a href={props.temporaryUrl} target="_blank" rel="noreferrer">
+            <a href={documents} target="_blank" rel="noreferrer">
               props.file
             </a>
+
           </div>
         </div> 
       </div>
+
+
       );
 
 
